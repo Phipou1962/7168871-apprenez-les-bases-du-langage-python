@@ -1,7 +1,9 @@
 import csv
+import os
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 
-def extract(filename="input.csv"):
+def extract(filename):
     data = []
     with open(filename, "r") as file:
         csv_reader = csv.DictReader(file)

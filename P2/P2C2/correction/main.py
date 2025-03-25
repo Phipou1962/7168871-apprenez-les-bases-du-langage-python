@@ -10,7 +10,7 @@ print("Liste des nombres:", liste)
 # Convertir chaque élément de la liste en entier
 liste_entiers = []
 for nombre in liste:
-    nombre_entier = int(nombre)
+    nombre_entier = float(nombre)
     liste_entiers.append(nombre_entier)
 
 
@@ -32,7 +32,7 @@ print("Moyenne des nombres:", moyenne)
 # Trouver combien de nombres de la liste sont supérieurs à la moyenne
 nombre_au_dessus_moyenne = 0
 for nombre in liste:
-    if nombre > moyenne:
+    if float(nombre) > moyenne:
         nombre_au_dessus_moyenne += 1
 print("Nombre de nombres supérieurs à la moyenne:", nombre_au_dessus_moyenne)
 
